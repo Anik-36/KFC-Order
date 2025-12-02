@@ -1,7 +1,12 @@
 body {
   padding: 0;
   margin: 5px 270px;
-  font-family: "Roboto", sans-serif;
+  font-family: gothambook;
+}
+
+@font-face {
+  font-family: gothambook;
+  src: url(font/Gotham\ Rounded\ Book.otf);
 }
 
 * {
@@ -18,9 +23,16 @@ header img {
   max-width: 52px;
 }
 
+h1 {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 header nav {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -31,5 +43,30 @@ header nav a {
 
 .start-ordering {
   background-image: url(image/start-ordering.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.start-ordering h1 {
+  text-align: center;
+  padding-top: 55px;
+}
+.start-ordering .btn-section {
+  display: flex;
+  justify-content: center;
+}
+.start-ordering .btn {
+  background-color: #e4002b;
+  text-transform: uppercase;
+  padding: 13px 88px;
+  border-radius: 5px;
+  color: white;
+  margin: 5px 25px 120px 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  .start-ordering .btn {
+    display: flex;
+  }
 }
