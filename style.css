@@ -28,3 +28,8 @@ header nav a {
   text-decoration: none;
   color: black;
 }
+
+.start-ordering {
+  background-image: url(image/start-ordering.jpg);
+  background-size: cover;
+}
