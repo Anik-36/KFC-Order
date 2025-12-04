@@ -57,16 +57,37 @@ header nav a {
 .start-ordering .btn {
   background-color: #e4002b;
   text-transform: uppercase;
-  padding: 13px 88px;
+  /* padding: 13px 89px; */
+  width: 250px;
+  height: 46px;
   border-radius: 5px;
   color: white;
-  margin: 5px 25px 120px 0;
-  font-weight: 500;
+  margin: 5px 15px 120px 10px;
+  font-weight: 300;
   font-size: 14px;
 }
 
+/***********************************************
+ ************* For Tablet view ****************
+*********************************************/
 @media (min-width: 700px) and (max-width: 1200px) {
+  body {
+    margin: 5px 50px;
+  }
+  .start-ordering {
+    /* background-size: 500px; */
+    overflow: hidden;
+  }
   .start-ordering .btn {
     display: flex;
+  }
+  .start-ordering .btn-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .start-ordering .btn {
+    margin-bottom: 10px;
+    justify-content: center;
+    /* padding: 13px 200px; */
   }
 }
