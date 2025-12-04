@@ -20,7 +20,7 @@ header {
 }
 
 header img {
-  max-width: 52px;
+  width: 52px;
 }
 
 h1 {
@@ -67,15 +67,34 @@ header nav a {
   font-size: 14px;
 }
 
+.feature-section .feature-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.feature-section .feature-heading h3 {
+  font-size: 19px;
+  color: #000000;
+  font-weight: 900;
+  padding-inline: 10px;
+  text-transform: uppercase;
+}
+.feature-section .feature-heading .horizontal-line {
+  border: 1px solid #3433335a;
+  width: 30%;
+}
+
 /***********************************************
  ************* For Tablet view ****************
 *********************************************/
-@media (min-width: 700px) and (max-width: 1200px) {
+@media (min-width: 700px) and (max-width: 1290px) {
   body {
-    margin: 5px 50px;
+    margin-inline: 50px;
   }
   .start-ordering {
-    /* background-size: 500px; */
+    background-size: 100%, 100%;
     overflow: hidden;
   }
   .start-ordering .btn {
@@ -88,6 +107,8 @@ header nav a {
   .start-ordering .btn {
     margin-bottom: 10px;
     justify-content: center;
+    align-items: center;
     /* padding: 13px 200px; */
+    width: 700px;
   }
 }
