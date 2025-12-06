@@ -1,6 +1,7 @@
 body {
   padding: 0;
-  margin: 5px 270px;
+  /* margin: 5px 270px; */
+  margin-inline: clamp(10px, 150px, 270px);
   font-family: gothambook;
 }
 
@@ -77,6 +78,19 @@ header nav a {
   text-decoration: none;
 }
 
+.experiment {
+  position: relative;
+  aspect-ratio: 16/5.5;
+  width: 100%;
+}
+.experiment img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .feature-section .feature-heading {
   display: flex;
   flex-direction: row;
@@ -99,17 +113,24 @@ header nav a {
 /***********************************************
  ************* For Tablet view ****************
 *********************************************/
-@media (min-width: 700px) and (max-width: 1290px) {
+/* @media (min-width: 1201px) and (max-width: 1200px) {
   body {
     margin-inline: 50px;
   }
-  .start-ordering {
-    background-size: 1100px, 100%;
+} */
+@media (min-width: 1050px) and (max-width: 1200px) {
+  body {
+    margin-inline: 50px;
+  }
+  /* .start-ordering {
+    background-size: cover;
+    aspect-ratio: 16/5.5;
+    background-position: center;
     overflow: hidden;
-  }
-  .start-ordering .btn {
+  } */
+  /* .start-ordering .btn {
     display: flex;
-  }
+  } */
   .start-ordering .btn-section {
     flex-direction: column;
     align-items: center;
@@ -118,7 +139,6 @@ header nav a {
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
-    /* padding: 13px 200px; */
     width: 700px;
   }
 }
