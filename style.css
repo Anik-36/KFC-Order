@@ -146,7 +146,6 @@ footer .horizontal-line {
   border: 1px solid #3433335a;
   width: 100%;
   margin: 25px 0 15px;
-  /* display: flex; */
 }
 
 .developer-section a {
@@ -189,14 +188,13 @@ footer .horizontal-line {
   line-height: 16px;
 }
 
+.message p span {
+  display: block;
+}
+
 /***********************************************
  ************* For Tablet view ****************
 *********************************************/
-/* @media (min-width: 1201px) and (max-width: 1200px) {
-  body-container{{
-    margin-inline: 50px;
-  }
-} */
 
 @media (min-width: 300px) and (max-width: 750px) {
   .body-container {
@@ -226,6 +224,34 @@ footer .horizontal-line {
     width: 250px;
     height: 35px;
   }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .social-media-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .developer-section {
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    margin-bottom: -10px;
+  }
+
+  .developer-section img {
+    max-width: 200px;
+    margin-bottom: 20px;
+    align-self: self-end;
+  }
+
+  .message p span {
+    display: none;
+  }
 }
 
 @media (min-width: 750px) and (max-width: 1050px) {
@@ -251,12 +277,37 @@ footer .horizontal-line {
     align-items: center;
     width: 500px;
   }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .social-media-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .developer-section {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin-top: -10px;
+  }
+
+  .developer-section img {
+    max-width: 350px;
+    margin-bottom: 20px;
+    align-self: self-end;
+  }
 }
 
 @media (min-width: 1050px) and (max-width: 1200px) {
   .body-container {
     margin-inline: 50px;
   }
+
   /* .start-ordering {
     background-size: cover;
     aspect-ratio: 16/5.5;
@@ -266,6 +317,7 @@ footer .horizontal-line {
   /* .start-ordering .btn {
     display: flex;
   } */
+
   .start-ordering .btn-section {
     flex-direction: column;
     align-items: center;
