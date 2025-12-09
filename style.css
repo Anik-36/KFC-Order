@@ -218,6 +218,8 @@ footer {
  ************* For Tablet view ****************
 *********************************************/
 
+/*enter pressed */
+
 @media (min-width: 300px) and (max-width: 750px) {
   .body-container {
     margin-inline: 40px;
