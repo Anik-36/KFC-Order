@@ -184,12 +184,34 @@ footer .horizontal-line {
 
 .message p {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   line-height: 16px;
 }
 
 .message p span {
   display: block;
+}
+
+.icon-footer {
+  width: 250px;
+  overflow: hidden;
+  height: 70px;
+  position: relative;
+  /* left: 36%; */
+  bottom: -34px;
+}
+
+.icon-footer img {
+  position: absolute;
+  transform: translate(-5px, -1178px);
+  /* transform: translateY(30%); */
+}
+footer {
+  position: relative;
+}
+.icon-main {
+  display: flex;
+  justify-content: center;
 }
 
 /***********************************************
